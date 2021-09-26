@@ -1,4 +1,4 @@
-var phone = document.getElementById("phone").innerHTML.value;
+var phone = document.getElementById("number").innerHTML.value;
 var phoneno = /^\d{10}$/;
     if(!phone.match(phoneno))
     {
