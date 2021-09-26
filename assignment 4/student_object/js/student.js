@@ -16,7 +16,7 @@ function Error() {
 const student1 = {
     name: "Ryan Rodricks",
     className: "D15A",
-    rollNo: 0,
+    rollNo: 60,
 };
 
 console.log("Student 1: ", student1);
@@ -29,7 +29,7 @@ class Student {
     }
 }
 
-const student2 = new Student("Ryan Rodricks", "D15A", 0);
+const student2 = new Student("Ryan Rodricks", "D15A", 60);
 console.log("Student 2: ", student2);
 
 Student.prototype.college = "VESIT";
