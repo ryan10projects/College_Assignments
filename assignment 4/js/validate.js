@@ -1,6 +1,6 @@
 function validate(number)
 {
-   var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
+   var regEx = /^\+(?:[0-9] ?){6,14}[0-9]$/;
    if(number.value.match(regEx))
      {
       return true;
