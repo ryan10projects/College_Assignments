@@ -1,5 +1,7 @@
-#grad1 {
-  
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, yellow);
-}
+body {  
+    background-color: lightblue;  
+}  
+h1 {  
+    color: navy;  
+    margin-left: 20px;  
+}   
