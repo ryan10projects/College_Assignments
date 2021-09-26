@@ -1,4 +1,4 @@
-const phone = document.forms["myForm"]["tagline"].value,
+const phone = document.getElementById("printName").innerHTML.value;
 var phoneno = /^\d{10}$/;
     if(!values.match(phoneno))
     {
