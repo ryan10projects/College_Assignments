@@ -1,4 +1,4 @@
-function phoneNumberCheck(number)
+function validate(number)
 {
    var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
    if(phoneNumber.value.match(regEx))
