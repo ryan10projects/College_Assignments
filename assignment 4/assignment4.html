@@ -64,9 +64,9 @@ placeholder="Enter Your Address Here"></textarea>
 </div>
 &nbsp;
 &nbsp;
-<div class="pincode">
+<form name="form1" action="#"> 
 Enter Number: <input type="number" name="number" id="number">
-</div>
+</form>
 &nbsp;
 <div class="date-user">
 <label for="date">Select a Date :</label>
@@ -75,7 +75,7 @@ Enter Number: <input type="number" name="number" id="number">
 &nbsp;
 &nbsp;
 <div class="submit-btn">
-<input type="submit" onclick="return validate()">
+<input type="submit" onclick="validate(document.form1.number)"">
 </div>
 </form></center>
   <script src="js/validate.js"></script>
