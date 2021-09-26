@@ -1,9 +1,13 @@
-function validate(){
-var phone = document.getElementById("number").innerHTML.value;
-var phoneno = /^\d{10}$/;
-    if(!phone.match(phoneno))
-    {
-        alert('Phone number must have 10 digits only');
-        
-    }
-}	
+function phoneNumberCheck(number)
+{
+   var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
+   if(phoneNumber.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Please enter a valid phone number.");
+     return false;
+     }
+}  
