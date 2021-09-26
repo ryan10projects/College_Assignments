@@ -1,4 +1,4 @@
-const phone = document.getElementById("printName").innerHTML.value;
+const phone = document.getElementById("phone").innerHTML.value;
 var phoneno = /^\d{10}$/;
     if(!values.match(phoneno))
     {
