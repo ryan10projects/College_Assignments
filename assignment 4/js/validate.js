@@ -1,6 +1,6 @@
 function validate(number)
 {
-   var regEx = \d{10};
+   var regEx = ^[0-9]{10}$;
    if(number.value.match(regEx))
      {
       return true;
