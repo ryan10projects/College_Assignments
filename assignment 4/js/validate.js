@@ -21,4 +21,34 @@ function validate(number,address)
      alert("Please enter address before placing order!");
       return false;
      }
+   
+
+
+        
+
+        
+
+        
+
+        var pincode=document.getElementById("number").value;
+
+        document.writeln("Thank you for completing this form.<br><br>");
+
+        document.writeln("Receipt cum acknowledgement.<br><br>");
+
+        
+
+        document.writeln("The Quantity you entered is " + Quantity + "<br>");
+
+        document.writeln("The Tagline you entered is " + Tagline + "<br>");
+
+        document.writeln("The Date you entered is " + Date + "<br>");
+
+        document.writeln("The Address you entered is " + Address + "<br>");
+
+        document.writeln("The pincode you entered is " + pincode + "<br>");   
+
+      }
+
+      </script>
 }  
