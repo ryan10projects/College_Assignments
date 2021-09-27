@@ -13,7 +13,7 @@ function validate(number,address)
        
        }
    else {
-      alert("Form submitted"+address.valus);
+      alert("Form submitted"+address);
       }
 
     if(address===null || address==" "){
