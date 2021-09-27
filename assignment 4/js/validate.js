@@ -8,7 +8,7 @@ function validate(number,address)
      return false;
      }
     else if(address.value.match(nullvalue)) {
-       alert("Please enter address ");
+       alert("Please enter address! ");
        return false;
        
        }
