@@ -89,20 +89,44 @@ Enter Number: <input type="number" name="number" id="number" placeholder="Enter 
 </script>
 </body>
 <script>
-  function validateForm() {
+
    
-  var tagline= document.getElementById("tagline").value;
 
-        var name= document.getElementById("name").value;
 
-        var number = document.getElementById("number").value; 
+  
 
-        var address = document.getElementById("address").value; 
+   
 
-       
+ function validateForm(){
 
-        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount: Rs.1500");
-}
+        
+
+        
+
+        var Tagline=document.getElementById("number").value;
+
+        var Quantity=document.getElementById("address").value;
+
+        
+
+        
+        document.writeln("Receipt acknowledgement.<br><br>");
+
+        
+
+        document.writeln("The Quantity you entered is " + Quantity + "<br>");
+
+        document.writeln("The Tagline you entered is " + Tagline + "<br>");
+
+        document.writeln("The Date you entered is " + Date + "<br>");
+
+        document.writeln("The Address you entered is " + Address + "<br>");
+
+        document.writeln("The pincode you entered is " + pincode + "<br>");   
+
+      }
+
+     
 </script>
   </div>
 
