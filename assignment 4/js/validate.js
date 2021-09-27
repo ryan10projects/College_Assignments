@@ -6,7 +6,7 @@ function validate(number)
       alert("Please enter a valid phone number.");
      return false;
      }
-    var add = document.getElementbyid(address).value;
+    var add = document.getElementById(address).value;
 
     if(!add){
 
