@@ -1,4 +1,4 @@
-function validate(number)
+function validate(number,address)
 {
    var regEx = /^\d{10}$/;
    if(!number.value.match(regEx))
@@ -6,9 +6,9 @@ function validate(number)
       alert("Please enter a valid phone number.");
      return false;
      }
-    var add = document.getElementById(address).value;
+   
 
-    if(add===null){
+    if(address===null){
 
      alert("Please enter address before placing order");
       return false;
