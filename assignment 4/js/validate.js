@@ -11,6 +11,6 @@ function validate(number)
     if(add==null){
 
      alert("Please enter address before placing order");
-
+      return false;
      }
 }  
