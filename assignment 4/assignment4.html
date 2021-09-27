@@ -110,8 +110,9 @@ Enter Number: <input type="number" name="number" id="number" placeholder="Enter 
         var Date=document.getElementbyId("date").value;
         
         
-        if(tagline===null){
+        if(!tagline){
           alert("enter number");
+          return false;
           }
 
         else{
