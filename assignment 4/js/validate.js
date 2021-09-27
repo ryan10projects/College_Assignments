@@ -2,6 +2,11 @@ function validate(number,address)
 {
    var regEx = /^\d{10}$/;
    var  nullvalue = /^(?!\s*$).+/;
+   
+
+
+
+var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
    if(!number.value.match(regEx))
      {
       alert("Please enter a valid phone number!");
