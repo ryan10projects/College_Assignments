@@ -6,7 +6,10 @@ function validate(number,address)
       alert("Please enter a valid phone number!");
      return false;
      }
-   
+    else {
+       alert("Form submitted successfully");
+       
+       }
 
     if(address===null || address==" "){
 
