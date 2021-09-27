@@ -6,7 +6,7 @@ function validate(number,address)
 
 
 
-var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+
    if(!number.value.match(regEx))
      {
       alert("Please enter a valid phone number!");
@@ -18,8 +18,8 @@ var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum
        
        }
    else {
-      alert("Form submitted successfully. Receipt Generated. Your address is"+address.value+" Your phone number is");
-
+      alert("Form submitted successfully. Receipt Generated. Your address is"+address.value);
+      document.writeln(address.value);
       }
 
 
