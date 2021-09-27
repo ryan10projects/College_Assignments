@@ -6,7 +6,7 @@ function validate(number,address)
       alert("Please enter a valid phone number!");
      return false;
      }
-    else if(!address) {
+    else if(address.value===null) {
        alert("Please enter address");
        return false;
        
