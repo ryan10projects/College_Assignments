@@ -48,7 +48,7 @@ function validate(number,address)
 
         document.writeln("The pincode you entered is " + pincode + "<br>");   
 
-      }
+      
 
-      </script>
+    
 }  
