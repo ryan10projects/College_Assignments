@@ -8,7 +8,7 @@ function validate(number)
      }
     var add = document.getElementbyid(address).value;
 
-    if(add==null){
+    if(!add){
 
      alert("Please enter address before placing order");
       return false;
