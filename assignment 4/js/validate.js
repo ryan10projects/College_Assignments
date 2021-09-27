@@ -1,13 +1,13 @@
 function validate(number,address)
 {
    var regEx = /^\d{10}$/;
-   var valueq =/^$|\s+/;
+   var  nullvalue =/^$|\s+/;
    if(!number.value.match(regEx))
      {
       alert("Please enter a valid phone number!");
      return false;
      }
-    else if(address.value.match(valueq)) {
+    else if(address.value.match(nullvalue)) {
        alert("Please enter address ");
        return false;
        
