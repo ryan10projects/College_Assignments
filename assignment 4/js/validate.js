@@ -13,8 +13,10 @@ function validate(number,address)
        
        }
    else {
-      alert("Form submitted"+address.value);
+      alert("Form submitted successfully. Receipt Generated. Your address is"+address.value+" Your phone number is" +number.value+"Your Receipt Id is" + randomnumber);
+
       }
+
 
     if(address===null || address==" "){
 
