@@ -4,7 +4,7 @@ function validate(number,address)
    var  nullvalue = /^(?!\s*$).+/;
    if(!number.value.match(regEx))
      {
-      alert("Please enter valid phone number!");
+      alert("Please enter a valid phone number!");
      return false;
      }
     else if(address.value.match(nullvalue)) {
@@ -13,7 +13,7 @@ function validate(number,address)
        
        }
    else {
-      alert("Form submitted successfully. Receipt Generated. Your address is"+address.value+" Your phone number is" +number.value+"Your Receipt Id is" + randomnumber);
+      alert("Form submitted successfully. Receipt Generated. Your address is"+address.value+" Your phone number is");
 
       }
 
