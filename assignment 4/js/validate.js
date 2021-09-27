@@ -8,7 +8,7 @@ function validate(number,address)
      }
    
 
-    if(address==null){
+    if(address===null || address==" "){
 
      alert("Please enter address before placing order!");
       return false;
