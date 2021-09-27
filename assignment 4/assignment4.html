@@ -28,7 +28,7 @@
 </div>
 
 <div class="custom-text">
-  <form name="form1" action="#"> 
+  <form name="form1" action="#" onsubmit="return validateForm()"> 
 <label for ="custom-text">Enter Customized Text:</label>&nbsp;<input type="text"
 name="tagline-text" required>
 </div>
@@ -80,9 +80,30 @@ Enter Number: <input type="number" name="number" id="number" placeholder="Enter 
 &nbsp;
 
   <li class="submit"><input type="submit" name="submit" value="Submit" onclick="validate(document.form1.number,document.form1.address)"/></li>
-
-  </div>
+  
+</div>
 </form></center>
-  <script src="js/validate.js"></script>
+  <script src="js/validate.js">
+
+
+</script>
 </body>
+<script>
+  function validateForm() {
+   
+  var tagline= document.getElementById("tagline").value;
+
+        var name= document.getElementById("name").value;
+
+        var number = document.getElementById("number").value; 
+
+        var address = document.getElementById("address").value; 
+
+       
+
+        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount: Rs.1500");
+}
+</script>
+  </div>
+
 </html>
