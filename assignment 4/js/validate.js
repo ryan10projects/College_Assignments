@@ -19,7 +19,7 @@ function validate(number,address)
        }
    else {
       alert("Form submitted successfully. Receipt Generated. Your address is"+address.value);
-      document.writeln(address.value);
+      
       }
 
 
