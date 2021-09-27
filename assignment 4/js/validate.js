@@ -7,8 +7,8 @@ function validate(number,address)
       alert("Please enter a valid phone number!");
      return false;
      }
-    else if(address.value.match(valueq)) {
-       alert("Please enter address");
+    else if(!address.value) {
+       alert("Please enter address ");
        return false;
        
        }
