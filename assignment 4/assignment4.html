@@ -1,121 +1,131 @@
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="css/bg.css">
-<title>Exp-1.2</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="css/bg.css">
+        
+        <title>HTML-2</title>
+    </head>
 
-<body>
- 
-   <center><h1>Amazon2 </h1></center>
-<center>
+    <body>
+        <center>
+        
 
-
-<img src="images/image.jpg" alt="Loading up image" height="400px">
-
-  <div>
-    <p><em>Black Shirt (Limited Edition) </em></p></div>
-<div class="price">
-<p> <b> Discounted Price </b> <b>10$ </b>&nbsp;&nbsp;<b> Original Price <strike>$20 </strike></p> </b>
-
-  </div>
-<img src="images/image1.jpg" alt="Please wait" height="400px">
-
-
-  <div><p><em> Black Hoodie </em></p></div>
-<div class="price">
-<p><b>Discounted Price </b><b>$15</b>&nbsp;&nbsp;<b>Original Price </b><strike>$20</strike></p>
-</div>
-
-<div class="custom-text">
-  <form name="form1" action="#"> 
-<label for ="custom-text">Enter Customized Text:</label>&nbsp;<input type="text"
-name="tagline-text" required>
-</div>
-&nbsp;
-<div>
-<label for="color">Color</label>
-<input type="color" id="color">
-</div>
-&nbsp;
-<div class="size">
-<label for="number">Enter Quantity:</label>
-<input type="number" min="1" max="20" step="1">
-</div>
-
-<div class="size-range">
-<p><strong> Select Size: </strong></p>
-<input type="radio" id="small" name="small-size" value="S">
-<label for="html">S</label><br>
-<input type="radio" id="medium" name="medium-size" value="M">
-<label for="css">M</label><br>
-<input type="radio" id="large" name="large-size" value="L">
-<label for="javascript">L</label><br>
-<input type="radio" id="extra-large" name="extra-size" value="XL">
-<label for="css">XL</label><br>
-
-<input type="radio" id="eextra-large" name="eextra-size" value="XLL">
-<label for="javascript">XLL</label>
-</div>
-&nbsp;
-&nbsp;
-  <div>
-    <p><strong><u> Delivery Options:</u></strong></p></div>
-&nbsp;
-<div>
-Enter Address: <textarea name="address" id="address" cols="30" rows="4"
-placeholder="Enter Your Address Here"></textarea>
-</div>
-&nbsp;
-&nbsp;
-<div>
-Enter Number: <input type="number" name="number" id="number" placeholder="Enter 10 digit number">
-  </div>
-&nbsp;
-<div class="date-user">
-<label for="date">Select a Date :</label>
-<input type="date" id="date" name="date" min="2021-05-25" max="2021-06-05">
-</div>
-&nbsp;
-&nbsp;
-
-  <li class="submit"><input type="submit" name="submit" value="Submit"  onclick="validate(document.form1.number,document.form1.address)" /></li>
-
-
-
- 
-</div>
-</form></center>
-  <script src="js/validate.js">
-
-
-</script>
-</body>
-
-
-   
-
-
+            
+               
+               
+                    <h1 class="order">Black T-Shirt</h1>
+                    <p><strong>Rs.1500</strong>&nbsp;&nbsp;<strike>Rs.1750</strike></p></h1>
+             
   
 
-   
-
-
-
         
+          
+                <form name="myForm" enctype="multipart/form-data" method="post" onsubmit="return validateForm()">
+                   <p> <img src="images/image.jpg" width="400" height="400""> </p>
+                    <label for="tagline">
+                    <strong>Enter Customized Text</strong></label></label>
+                    <input type="text" id="tagline" name="tagline">
 
-        
+                    <p>
+                        <strong>Choose strip color:</strong>
+                    </p>
+                    <input type="radio" id="orange" name="color" value="orange">
+                    <label for="orange">Orange</label><br>
+                    <input type="radio" id="yellow" name="color" value="yellow">
+                    <label for="yellow">Yellow</label><br>
+                    <input type="radio" id="voilet" name="color" value="Voilet">
+                    <label for="voilet">Voilet</label><br>
+                    <input type="radio" id="pink" name="color" value="Pink">
+                    <label for="pink">Pink</label><br>
+                    <input type="radio" id="blue" name="color" value="black">
+                    <label for="black">Black</label>
+            
 
-        
+                    <p>
+                        <label for="size"><strong>Choose shirt size:</strong></label>
+                        <select name="size" id="size">
+                            <option selected="" value="default">Select a size</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </p>
 
+                    <p>
+                        <label for="quantity"><strong>Quantity:</strong></label>    
+                        <input type="text" id="quantity" name="name">
+                    </p>
+                    
+                    <p>
+                        <label for="name"><strong>Enter your name:</strong></label>    
+                        <input type="text" id="name" name="name">
+                    </p>
 
+                    <p>
+                        <label for="number"><strong>Enter your mobile number:</strong></label>
+                        <input type="text" id="number" name="number">
+                    </p>
 
+                    <p>
+                        <label for="address"><strong>Enter your address:</strong></label>
+                    </p>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
 
-        
-        
-        
+                    <p>
+                        <strong>Choose payment options:</strong>
+                    </p>
+                    
+                    <input type="radio" id="cash" name="pay" value="Cash">
+                    <label for="cash">Cash</label>
 
+                    <p><strong>Total amount:</strong> ₹ 1500</p>
+                    <button class="button green" name="submit" type="submit">Place Order</button>
+                </form> 
+                
+            
 
-  </div>
+       
+</center>
+    </body>
+    <script>
+    function validateForm() {
 
+       var a = /^[A-Za-z ]{3,30}$/
+       var b = /^[0-99]{2}$/
+       var c = /^[789]\d{9}$/
+       if(a.test(document.myForm.tagline.value)==false)
+       {
+        alert("Enter Valid Tagline!");
+        }
+       else if(b.test(document.myForm.quantity.value)==false)
+       {
+	alert("Enter Quantity between 1 to 99");
+	}
+       else if(size =="select a size")
+       {
+	alert("Enter a size");
+	}
+       else if(address== "")
+       {
+	alert("Enter valid address");
+	}
+       else if(c.test(document.myForm.number.value)==false)
+       {
+	alert("Enter valid Phone number");
+	}
+       else
+       {
+        var tagline= document.getElementById("tagline").value;
+        var name= document.getElementById("name").value;
+        var number = document.getElementById("number").value; 
+        var address = document.getElementById("address").value; 
+        var size = document.getElementById("size").value;
+        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount: Rs.1500");
+       }
+}
+
+    </script>
+</center>
 </html>
