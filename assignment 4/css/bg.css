@@ -9,6 +9,12 @@ h1 {
     color: navy;  
     margin-left: 20px;  
 }   
+img {
+
+  border: 5px solid #555;
+
+}
+
 
 div {
   background-color: lightgrey;
