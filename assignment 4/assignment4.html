@@ -61,7 +61,7 @@
                     
                     <p>
                         <label for="name"><strong>Enter your name:</strong></label>    
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name1" name="name1">
                     </p>
 
                     <p>
@@ -98,38 +98,38 @@
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
-       var name = document.forms["myForm"]["name"].value;
+       var name1 = document.forms["myForm"]["name1"].value;
        var address = document.forms["myForm"]["address"].value;
        if(a.test(document.myForm.tagline.value)==false)
        {
         alert("Enter Valid Tagline!");
         }
-       else if(b.test(document.myForm.quantity.value)==false)
+       if(b.test(document.myForm.quantity.value)==false)
        {
 	alert("Enter Quantity between 1 to 99");
 	}
-       else if(size =="select a size")
+       if(size =="select a size")
        {
 	alert("Enter a size");
 	}
-       else if(name== "" )
+       if(name== "")
        {
-	alert("Enter valid name");
+	alert("Enter a valid name");
 	}
-       else if(c.test(document.myForm.number.value)==false)
+       if(c.test(document.myForm.number.value)==false)
        {
 	alert("Enter valid Phone number");
 	}
 
-        else if(pay =="Select payment")
+        if(pay =="Select payment")
         {
          alert("Select a payment option");
         }
-     else if(address== "" )
+        if(address== "" )
        {
 	alert("Enter valid address");
        }
-	    else if(document.getElementById("color").checked == true){
+	    if(document.getElementById("color").checked == true){
 alert("Select a color");
 	    }
 	
