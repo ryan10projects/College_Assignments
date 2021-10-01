@@ -1,6 +1,6 @@
 function Error() {
 	
-    var value = document.getElementById("Error").value;
+    var value = document.getElementById("message").value;
    message.innerHTML = "";
   let x = document.getElementById("Error").value;
   try { 
