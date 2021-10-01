@@ -102,6 +102,7 @@
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
+       var d = /^[a-zA-Z\s]+$/
        if(a.test(document.myForm.tagline.value)==false)
        {
         alert("Enter Valid Tagline!");
@@ -123,7 +124,7 @@
 	alert("Enter valid Phone number");
 	}
 	
-	else if(!name.length)
+	else if(d.test(document.myForm.pay.value)==false)
         {		    
 	alert ("Enter a valid name");
         }
