@@ -123,7 +123,7 @@
 	alert("Enter valid Phone number");
 	}
 	
-	else if(document.myForm.name.value==="")
+	else if(name==="")
         {		    
 	alert ("Enter a valid name");
         }
@@ -138,7 +138,9 @@
         var number = document.getElementById("number").value; 
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
+	var name =document.getElementById("name").value;
 	var quantity =document.getElementById("quantity").value;
+	        
 	var total=quantity*1500;
         alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total+"."
 	   );
