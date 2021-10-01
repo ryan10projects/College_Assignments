@@ -128,7 +128,7 @@
         {		    
 	alert ("Enter a valid name");
         }
-        else if(document.myForm.pay.value=="Select a payment option")
+        else if(pay =="Select a payment option")
         {
          alert("Select a payment option");
         }
@@ -140,6 +140,8 @@
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
 	var name =document.getElementById("name").value;
+	
+	var pay = document.getElementById("pay").value;
 	var quantity =document.getElementById("quantity").value;
 	        
 	var total=quantity*1500;
