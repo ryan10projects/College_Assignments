@@ -19,11 +19,11 @@ const student1 = {
     rollNo: 60,
 };
 
-console.log("Student 1: ", student1);
+console.log("Student details: ", student1);
 
 class Student {
-    constructor(uname, className, rollNo) {
-        this.uname = uname;
+    constructor(name, className, rollNo) {
+        this.name = name;
         this.className = className;
         this.rollNo = rollNo;
     }
@@ -32,10 +32,10 @@ class Student {
 const student2 = new Student("Ryan Rodricks", "D15A", 60);
 console.log("Student 2: ", student2);
 
-Student.prototype.college = "VESIT";
+Student.prototype.surname = "Rodricks";
 console.log("Student 2: ", student2);
 
-document.getElementById("printName").innerHTML = student2.uname;
+document.getElementById("printName").innerHTML = student2.name;
 document.getElementById("printClass").innerHTML = student2.className;
 document.getElementById("printRoll").innerHTML = student2.rollNo;
 
