@@ -7,7 +7,7 @@ h1 {
   
   background-color: white;
     color: navy;  
-    margin-left: 20px;  
+   
 }   
 img {
 
@@ -17,28 +17,8 @@ img {
 
 
 div {
-  background-color: lightgrey;
   width: 300px;
-  border: 15px solid white;
+  border: 15px solid green;
   padding: 50px;
   margin: 20px;
-}
-
-
-.column-1 {
-    float: left;
-    width: 30%;
-    margin-left: 1rem;
-}
-
-.column-2 {
-    float: right;
-    width: 60%;
-    margin-right: 1rem;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
