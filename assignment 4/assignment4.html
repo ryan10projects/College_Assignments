@@ -78,16 +78,7 @@
                     </p>
                     <textarea id="address" name="address" rows="4" cols="30"></textarea>
 
-                    <p>
-                        <strong>Choose payment options:</strong>
-                    </p>
-                    
-                    <input type="radio" id="cash" name="pay" value="Cash">
-                    <label for="cash">
-			<input type="radio" id="paytm" name="pay" value="Cash">
-                    <label for="paytm">Paytm</label>
-Cash</label>
-
+                  
                     <br>
                     <button name="submit" type="submit">Place Order</button>
                 </form> 
@@ -131,10 +122,11 @@ Cash</label>
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
 	
+	
 	       var quantity =document.getElementById("quantity").value;
 	       var total=quantity*1500;
         alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total+"."
-	     );
+	    + );
        }
 }
 
