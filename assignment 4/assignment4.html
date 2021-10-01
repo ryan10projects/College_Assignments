@@ -8,7 +8,7 @@
         <center>
              <h1>Shopping Site </h1>
               <div>   
-                <form name="myForm" onsubmit="return validateForm()">
+                <form name="myForm">
 			
                    <p> <img src="images/image.jpg" width="200" height="200"> </p>
 			
@@ -84,7 +84,7 @@
                     </p>
                   
                     <br>
-                    <button name="submit" type="submit">Place Order</button>
+                    <button name="submit" type="submit" onclick="validateForm();" >Place Order</button>
                 </form> 
                 
             </div>
@@ -92,7 +92,7 @@
        
 </center>
     </body>
-    <script>
+    <script type="text/javascript">
     function validateForm() {
 
        var a = /^[A-Za-z]{1,30}$/
@@ -143,8 +143,7 @@
 	var quantity =document.getElementById("quantity").value;
 	        
 	var total=quantity*1500;
-        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total+"."
-	   );
+        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total);
        
 }
 	    }
