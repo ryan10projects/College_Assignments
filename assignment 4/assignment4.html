@@ -94,12 +94,12 @@
     </body>
     <script type="text/javascript">
     function validateForm() {
-
+	var name1 = document.getElementById("name1");
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
-       var name1 = document.forms["myForm"]["name1"].value;
-       var address = document.forms["myForm"]["address"].value;
+
+
        if(a.test(document.myForm.tagline.value)==false)
        {
         alert("Enter Valid Tagline!");
@@ -122,7 +122,10 @@
         {
          alert("Select a payment option");
         }
-	
+	else if(name1.value === ""){
+		alert("Select a name");
+		
+	}
         
 	
        else
