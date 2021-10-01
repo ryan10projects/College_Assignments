@@ -94,7 +94,8 @@
     </body>
     <script type="text/javascript">
     function validateForm() {
-	var name1 = document.getElementById("name1");
+       var name1 = document.getElementById("name1");
+       var address = document.getElementById("address");
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
@@ -123,7 +124,11 @@
          alert("Select a payment option");
         }
 	else if(name1.value === ""){
-		alert("Select a name");
+		alert("Enter a valid name");
+		
+	}
+	else if(address.value === ""){
+		alert("Enter a valid address");
 		
 	}
         
