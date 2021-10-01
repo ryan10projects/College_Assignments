@@ -96,8 +96,11 @@
     function validateForm() {
        var name1 = document.getElementById("name1");
        var address = document.getElementById("address");
+       var s = document.getElementById("pay");
+       var _selectedValue= s.options[s.selectedIndex].value;
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
+       
        var c = /^[89]\d{9}$/
 
 
@@ -131,7 +134,9 @@
 		alert("Enter a valid address");
 		
 	}
-        
+        else if(_selectedValue==null){
+	alert("select a payment option");	
+	}
 	
        else
        {
