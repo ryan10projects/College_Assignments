@@ -77,7 +77,15 @@
                         <label for="address"><strong>Enter your address:</strong></label>
                     </p>
                     <textarea id="address" name="address" rows="4" cols="30"></textarea>
-
+                     <p>
+                        <label for="pay"><strong>Choose Payment option:</strong></label>
+                        <select name="pay" id="pay">
+                            <option selected="" value="default">Select a payment option</option>
+                            <option value="Paytm">Paytm</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Google Pay">Google Pay</option>
+                     </select>
+                    </p>
                   
                     <br>
                     <button name="submit" type="submit">Place Order</button>
@@ -115,10 +123,14 @@
 	alert("Enter valid Phone number");
 	}
 	
-	else if(!document.myForm.name.value){
-		    
-		alert ("Enter a name");
-		    }
+	else if(!document.myForm.name.value)
+        {		    
+	alert ("Enter a valid name");
+        }
+        else if(!document.myForm.price.value)
+        {
+         alert("Select a payment option);
+        }
        else
        {
         var tagline= document.getElementById("tagline").value;
@@ -126,10 +138,8 @@
         var number = document.getElementById("number").value; 
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
-	
-	
-	       var quantity =document.getElementById("quantity").value;
-	       var total=quantity*1500;
+	var quantity =document.getElementById("quantity").value;
+	var total=quantity*1500;
         alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total+"."
 	   );
        }
