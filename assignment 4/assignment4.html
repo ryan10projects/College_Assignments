@@ -2,45 +2,49 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/bg.css">
-        
         <title>HTML-2</title>
     </head>
-
     <body>
         <center>
-
-             <h1 class="order">Shopping Site </h1>
-
-              <div>
-          
+             <h1>Shopping Site </h1>
+              <div>   
                 <form name="myForm" onsubmit="return validateForm()">
+			
                    <p> <img src="images/image.jpg" width="200" height="200"> </p>
-			<p>Black T-Shirt</p>
+			
+		    <p>Black T-Shirt</p>
+			
                     <p><strong>Rs.999</strong>&nbsp;&nbsp;<strike>Rs.1000</strike></p>
-
-	
+			
                     <label for="tagline">
-                    <strong>Enter Tagline</strong>
-			</label></label>
+			    
+                    <strong>Enter Tagline</strong></label>
+			
                     <input type="text" id="tagline" name="tagline">
-
-                    <p>
-                        <strong>Choose strip color:</strong>
-                    </p>
+			
+                    <p><strong>Choose strip color:</strong></p>
+			
                     <input type="radio" id="orange" name="color" value="orange">
+			
                     <label for="orange">Orange</label><br>
+			
                     <input type="radio" id="yellow" name="color" value="yellow">
+			
                     <label for="yellow">Yellow</label><br>
+			
                     <input type="radio" id="voilet" name="color" value="Voilet">
+			
                     <label for="voilet">Voilet</label><br>
+			
                     <input type="radio" id="pink" name="color" value="Pink">
+			
                     <label for="pink">Pink</label><br>
+			
                     <input type="radio" id="blue" name="color" value="black">
+			
                     <label for="black">Black</label>
-            
-
-                    <p>
-                        <label for="size"><strong>Choose shirt size:</strong></label>
+			
+                    <p><label for="size"><strong>Choose shirt size:</strong></label>
                         <select name="size" id="size">
                             <option selected="" value="default">Select a size</option>
                             <option value="S">S</option>
@@ -50,7 +54,6 @@
                             <option value="XXL">XXL</option>
                         </select>
                     </p>
-
                     <p>
                         <label for="quantity"><strong>Quantity:</strong></label>    
                         <input type="text" id="quantity" name="name">
@@ -121,10 +124,7 @@
         {
          alert("Select a payment option");
         }
-	else if(name =="")
-	{
-	alert("Select a name);	
-	}
+	
        else
        {
         var tagline= document.getElementById("tagline").value;
