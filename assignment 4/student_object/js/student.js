@@ -3,11 +3,11 @@ function Error() {
     var value = document.getElementById("Error").value;
 
     if (isNaN(value) || value == 0) {
-		message.innerHTML = "Input Invalid";
+        message.innerHTML = "Input Entered is Invalid";
         throw new Error("Invalid Input");
     } 
     else {
-        console.log("Valid Input");
+	message.innerHTML = "Input Entered is valid";
     }
 }
 
