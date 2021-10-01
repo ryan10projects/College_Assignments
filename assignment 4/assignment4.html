@@ -99,7 +99,7 @@
 
 
        var a = /^[A-Za-z]{1,30}$/
-       var b = /^\b([0-9]|[1-9][0-9])\b$/
+       var b = /^[0-9]$/
        
        var c = /^[89]\d{9}$/
 
@@ -110,7 +110,7 @@
         }
        else if(b.test(document.myForm.quantity.value)==false)
        {
-	alert("Enter Quantity between 1 to 99");
+	alert("Enter Quantity between 1 to 9");
 	}
        else if(size =="select a size")
        {
