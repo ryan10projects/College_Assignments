@@ -91,7 +91,7 @@
     <script>
     function validateForm() {
 
-       var a = /^[A-Za-z]$/
+       var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
        if(a.test(document.myForm.tagline.value)==false)
