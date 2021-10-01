@@ -18,7 +18,7 @@ img {
 
 div {
   width: 300px;
-
+  border:1px solid black;
   padding: 50px;
   background-color: white;
   margin: 20px;
