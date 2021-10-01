@@ -8,15 +8,8 @@
 
     <body>
         <center>
-        
-
-            
-
-     
 
              <h1 class="order">Shopping Site </h1>
-                    
-  
 
               <div>
           
@@ -100,7 +93,7 @@
     function validateForm() {
 
        var a = /^[A-Za-z]{1,30}$/
-       var b = /^[0-99]$/
+       var b = /^[0-99]{2}$/
        var c = /^[89]\d{9}$/
       
        if(a.test(document.myForm.tagline.value)==false)
@@ -123,12 +116,15 @@
        {
 	alert("Enter valid Phone number");
 	}
-	
-	
+
         else if(pay =="Select payment")
         {
          alert("Select a payment option");
         }
+	else if(name =="")
+	{
+	alert("Select a name);	
+	}
        else
        {
         var tagline= document.getElementById("tagline").value;
@@ -136,7 +132,7 @@
         var number = document.getElementById("number").value; 
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
-	
+	 
 	
 	var pay = document.getElementById("pay").value;
 	var quantity =document.getElementById("quantity").value;
