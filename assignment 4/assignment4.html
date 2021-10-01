@@ -27,7 +27,7 @@
 
 	
                     <label for="tagline">
-                    <strong>Enter Customized Text</strong>
+                    <strong>Enter Tagline</strong>
 			</label></label>
                     <input type="text" id="tagline" name="tagline">
 
@@ -83,10 +83,13 @@
                     </p>
                     
                     <input type="radio" id="cash" name="pay" value="Cash">
-                    <label for="cash">Cash</label>
+                    <label for="cash">
+			<input type="radio" id="paytm" name="pay" value="Cash">
+                    <label for="paytm">Paytm</label>
+Cash</label>
 
                     
-                    <button class="button green" name="submit" type="submit">Place Order</button>
+                    <button name="submit" type="submit">Place Order</button>
                 </form> 
                 
             </div>
@@ -97,9 +100,9 @@
     <script>
     function validateForm() {
 
-       var a = /^[A-Za-z ]{3,30}$/
-       var b = /^[0-99]{2}$/
-       var c = /^[789]\d{9}$/
+       var a = /^[A-Za-z]$/
+       var b = /^[0-99]$/
+       var c = /^[89]\d{9}$/
        if(a.test(document.myForm.tagline.value)==false)
        {
         alert("Enter Valid Tagline!");
