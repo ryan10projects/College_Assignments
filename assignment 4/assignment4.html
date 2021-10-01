@@ -122,7 +122,11 @@
         var number = document.getElementById("number").value; 
         var address = document.getElementById("address").value; 
         var size = document.getElementById("size").value;
-        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount: Rs.1500");
+	
+	       var quantity =document.getElementById("quantity").value;
+	       var total=quantity*1500;
+        alert("Order Recepit \nName: "+name+ "\nPhone Number: "+number+ "\nTagline: "+tagline+ "\nAddress: "+address+ "\nSize: "+size+ "\nTotal Amount:"+total"
+	      .");
        }
 }
 
