@@ -1,14 +1,15 @@
 function Error() {
 	
     var value = document.getElementById("Error").value;
+   message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
 
-    if (isNaN(value) || value == 0) {
-        message.innerHTML = "Input Entered is Invalid";
-        throw new Error("Invalid Input has been inputted");
-    } 
-    else {
-	message.innerHTML = "Input Entered is valid";
-    }
 }
 
 
