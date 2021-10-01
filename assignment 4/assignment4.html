@@ -98,7 +98,7 @@
        var a = /^[A-Za-z]{1,30}$/
        var b = /^[0-99]$/
        var c = /^[89]\d{9}$/
-      
+       var name = document.forms["myForm"]["name"].value;
        if(a.test(document.myForm.tagline.value)==false)
        {
         alert("Enter Valid Tagline!");
@@ -111,9 +111,9 @@
        {
 	alert("Enter a size");
 	}
-       else if(address== "")
+       else if(name== "")
        {
-	alert("Enter valid address");
+	alert("Enter valid name");
 	}
        else if(c.test(document.myForm.number.value)==false)
        {
