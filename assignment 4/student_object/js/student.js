@@ -4,7 +4,7 @@ function Error() {
 
     if (isNaN(value) || value == 0) {
         message.innerHTML = "Input Entered is Invalid";
-        throw new Error("Invalid Input has occured");
+        throw new Error("Invalid Input has been inputted");
     } 
     else {
 	message.innerHTML = "Input Entered is valid";
