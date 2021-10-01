@@ -2,7 +2,7 @@ function Error() {
 	
     var value = document.getElementById("Error").value;
    message.innerHTML = "";
-  let x = document.getElementById("demo").value;
+  let x = document.getElementById("Error").value;
   try { 
     if(x == "")  throw "empty";
   }
