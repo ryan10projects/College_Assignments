@@ -36,6 +36,50 @@ p {
     background-color: purple;
     font-family: monospace;    
 }
+.descendent div p { 
+
+color: #fff;
+background-color: black;
+
+}
+.child div > p { 
+background-color: Orange;
+}
+.adjacent div + p {
+color: #FFF; 
+background-color: #8F00FF;
+}
+.general div ~ p { 
+color: #FFF; 
+background-color: #2EFF2E;
+}
+a:link { 
+color: red;
+}
+/* visited link */ a:visited {
+color: Blue;
+}
+/* mouse over link */ a:hover {
+color: Green;
+}
+/* selected link */ a:active {
+color: Red;
+}
+.attrselector a[target] { 
+background-color: Red;
+color: #FFF;
+}
+#para1 {
+text-align: center; 
+color: red;
+}
+.simple .classSelector { 
+text-align: center;
+font-size: 30;
+color: yellow;
+}
+
+
 	</style>
 	
 </head>
@@ -56,6 +100,50 @@ p {
 	<p class="paragraph-class">
 		I am Ryan Rodricks from D15A and my roll number is 60
 	</p>
+        <span class="descendent">
+
+<div>
+<p>This is a descendant selector where p tag is descendent of div</p>
+</div>
+<p>This is where p tag has no descendent</p>
+</span>
+<span class="child">
+<div>
+<p>This a child selector where (>) selects all elements that are the children of a specified 
+element.</p>
+<section>
+<p>This Line is not a child as it is inside a section tag</p>
+</section>
+</div>
+<p>This is also not a child as it is outside of the selected div tag</p>
+</span>
+<hr>
+<span class="adjacent">
+<div>
+<h4>This is a Adjacent Selector where + is used to select an element that is directly after 
+another specific element.</h4>
+</div>
+<p>This just after a div tag</p>
+<hr>
+<span class="general">
+<b><p>This is a general sibling selector where (~) selects all elements that are next siblings 
+of a specified element.</p></b>
+<p>This line is before the selected div tag</p>
+<div>
+<p>This line is inside the selected div tag</p>
+</div>
+<p>This line is after the selected div tag</p>
+</span>
+<hr>
+<h2>This is a Pseudo-class selector</h2>
+<p><b><a href="https://github.com/" target="_blank">Github</a></b></p>
+<hr>
+<span class="attrselector">
+<h2>These are attribute selectors</h2>
+<a href="https://facebook.com/">Facebook</a><br>
+</span>
+
+
 </body>
 
 </html>
