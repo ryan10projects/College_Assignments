@@ -2,11 +2,16 @@
 
 // College
 $college[] = "Vivekanand Education Society's Institute of Technology (VESIT)";
-$college[] = "VJTI";
-$college[] = "K K Wagh Polytechnic Nashik";
-$college[] = "Sandip Foundation";
-$college[] = "Don Bosco";
-$college[] = "TSEC";
+
+$college[] = "Shah and anchor kutchhi Engineering";
+
+$college[] = "Our lady of perceptual succour ";
+
+$college[] = "Ryan International school";
+
+$college[] = "Oxford University";
+
+$college[] = "New Boston University";
 
 try{
 	$c = $_REQUEST["c"];
